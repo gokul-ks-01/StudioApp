@@ -1,0 +1,121 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto; /* Centers the content, equal space on left and right */
+  text-align: center;
+
+}
+
+/* Logo styling */
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+/* Animation for logo spin */
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+/* Card styling */
+.card {
+  padding: 2em;
+}
+
+/* Footer and Header text */
+.read-the-docs {
+  color: #888;
+}
+
+.header_span {
+  position: fixed;
+  top: 0;
+  left: 0;
+  font-size: 16px;
+  width: 100%;
+  background-color: transparent;
+}
+
+.footer_text {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  padding: 2px;
+  font-size: 1em;
+}
+
+/* RESPONSIVE DESIGN */
+
+/* For tablets and smaller screens (max-width: 768px) */
+@media (max-width: 768px) {
+  #root {
+    max-width: 100%; /* Reducing the width to fit smaller screens */
+    margin: 0 auto; /* Ensure center alignment with equal space on both sides */
+    padding: 1rem;
+  }
+
+  .logo {
+    height: 5em; /* Smaller logo for tablets */
+    padding: 1rem;
+  }
+
+  .card {
+    padding: 1.5em; /* Less padding for smaller screens */
+  }
+
+  .header_span {
+    font-size: 14px; /* Smaller font size for the header */
+  }
+
+  .footer_text {
+    font-size: 0.9em; /* Reduce font size in footer */
+    padding: 1px;
+  }
+}
+
+/* For mobile devices (max-width: 480px) */
+@media (max-width: 480px) {
+  #root {
+    max-width: 100%;
+    margin: 0 auto; /* Center alignment */
+    padding: 1rem; /* Symmetrical padding */
+  }
+
+  .logo {
+    height: 4em; /* Even smaller logo for mobile devices */
+    padding: 0.5rem;
+  }
+
+  .card {
+    padding: 1em; /* Smaller padding for cards on mobile */
+  }
+
+  .header_span {
+    font-size: 12px; /* Smaller font size in the header */
+  }
+
+  .footer_text {
+    font-size: 0.8em; /* Smaller font size in footer */
+    padding: 0.5px;
+  }
+}
