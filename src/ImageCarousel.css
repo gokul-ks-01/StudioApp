@@ -1,0 +1,54 @@
+/* Container for the carousel */
+.carousel-container {
+  width: 400px;
+  margin: 0 auto; /* Center the carousel */
+  border-radius: 20px; /* Rounded corners for the entire carousel container */
+  overflow: hidden; /* Ensure images don't spill out of rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for better visual */
+}
+
+/* Each image card inside the carousel */
+.image-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  border-radius: 20px; /* Rounded corners for individual image cards */
+  overflow: hidden;
+}
+
+/* Images inside the cards */
+.image-card img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px; /* Ensure images are rounded as well */
+  object-fit: cover;
+}
+
+/* Custom dot selectors (rounded buttons) */
+.slick-dots {
+  bottom: 15px; /* Adjust positioning as needed */
+}
+
+.slick-dots li {
+  margin: 0 5px;
+}
+
+.slick-dots li button::before {
+  font-size: 12px;
+  color: transparent; /* Hide the default slick dot */
+}
+
+.slick-dots li button.custom-dot {
+  width: 12px;
+  height: 12px;
+  border: 2px solid #ccc; /* Light border around dots */
+  background-color: white;
+  border-radius: 50%;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.slick-dots li.slick-active button.custom-dot {
+  background-color: #333; /* Active dot color */
+  border-color: #333; /* Active dot border */
+}
