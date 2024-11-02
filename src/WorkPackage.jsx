@@ -1,67 +1,25 @@
 import React from 'react';
+import { useState } from 'react';
+import { PackageDesc } from './components/PackageDesc';
+import './WorkPackage.css';
 
 const WorkPackage = () => {
+    const [showDetails, setShowDetails] = useState(<PackageDesc title='Combined' />);
+
+    function openPackageDetails(title) {
+        setShowDetails(<PackageDesc title={title} />);  // Pass title as a prop
+    }
     return (
-        <table>
-            <caption>Packages</caption>
-            <thead>
-                <tr>
-                    <th colSpan="2">Wedding - Groom Side</th>
-                    <th colSpan="2">Wedding - Bride Side</th>
-                    <th colSpan="2">Wedding - Combined</th>
-                </tr>
-                <tr>
-                    <th>Details</th>
-                    <th>Price</th>
-                    <th>Details</th>
-                    <th>Price</th>
-                    <th>Details</th>
-                    <th>Price</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Wedding-photography</td>
-                    <td>Wedding-Videography</td>
-                    <td>Photography</td>
-                    <td>10000</td>
-                    <td>Photography</td>
-                    <td>10000</td>
-                </tr>
-                <tr>
-                    <td>Photography</td>
-                    <td>10000</td>
-                    <td>Photography</td>
-                    <td>10000</td>
-                    <td>Photography</td>
-                    <td>10000</td>
-                </tr>
-                <tr>
-                    <td>Photography</td>
-                    <td>10000</td>
-                    <td>Photography</td>
-                    <td>10000</td>
-                    <td>Photography</td>
-                    <td>10000</td>
-                </tr>
-                <tr>
-                    <td>Photography</td>
-                    <td>10000</td>
-                    <td>Photography</td>
-                    <td>10000</td>
-                    <td>Photography</td>
-                    <td>10000</td>
-                </tr>
-                <tr>
-                    <td>Photography</td>
-                    <td>10000</td>
-                    <td>Photography</td>
-                    <td>10000</td>
-                    <td>Photography</td>
-                    <td>10000</td>
-                </tr>
-            </tbody>
-        </table>
+     
+        <section className='packages'>
+            <div className='side_buttons_div'>
+                <button onClick={()=>openPackageDetails('Combined')} label="second one">Wedding - Combined</button>
+                <button onClick={()=>openPackageDetails('GroomSide')} label="first one">Wedding - Groom Side</button>
+                <button onClick={()=>openPackageDetails('BrideSide')} label="second one">Wedding - Bride Side</button>
+            </div>
+    
+                {showDetails}
+        </section>
     );
 };
 

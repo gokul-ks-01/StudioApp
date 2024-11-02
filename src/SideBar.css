@@ -14,7 +14,7 @@
   
   /* Sidebar when open */
   .sidebar.open {
-   
+    
     left: 0px;
 
     
@@ -28,7 +28,7 @@
   
   .sidebar ul li {
     margin: 10px 0;
-   background-color:  #eaf1f3;
+/* background-color:  #eaf1f3;*/
   }
   
   .sidebar ul li a {

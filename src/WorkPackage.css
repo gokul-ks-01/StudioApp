@@ -1,42 +1,64 @@
-body {
+/* General layout styling */
+.packages {
+    display: flex;
+    
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    margin: 40px;
-}
-
-table {
+    margin-top: 20px;
+    /* Decide below code is needed */
     width: 80%;
-    margin: 20px auto;
-    border-collapse: collapse;
-    background-color: #fff;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
-}
-
-th, td {
-    padding: 12px;
+    max-width: 600px;
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     text-align: left;
-    border-bottom: 1px solid #ddd;
+    flex-direction: column;
+    align-items: center;
+
+
 }
 
-th {
-    background-color: #4CAF50;
-    color: white;
+
+.side_buttons_div {
+    display: flex ;
+    gap: 10px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+
 }
 
-tr:hover {
-    background-color: #f1f1f1;
+/* Button styling */
+.side_buttons_div button {
+    padding: 10px 15px;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-td {
+.side_buttons_div button:hover {
+    background-color: #0056b3;
+}
+
+/* Package description styling */
+
+
+.packages h1 {
+    font-size: 24px;
     color: #333;
+    margin-bottom: 5px;
+    text-align: center;
 }
 
-tr:nth-child(even) {
-    background-color: #f9f9f9;
-}
-
-caption {
-    font-size: 1.5em;
-    margin: 10px;
-    font-weight: bold;
+.packages p {
+    font-size: 16px;
+    color: #555;
+    white-space: pre-wrap;
+    /* Preserves formatting for multiline details */
+    line-height: 1.6;
+    justify-content: center;
+    white-space: pre-line;
 }

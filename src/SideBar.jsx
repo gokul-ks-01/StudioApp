@@ -13,17 +13,15 @@ const Sidebar = () => {
 
   return (
     <div>
-      {/* Button to toggle sidebar */}
       <button className="toggle-btn" onClick={toggleSidebar}>
         <FontAwesomeIcon icon={faBars} /> Menu
       </button>
 
       <div className={`sidebar ${isOpen ? 'open' : ''}`}>
         <ul>
-          <li><Link to="/">Home</Link></li>
-          <li><Link to="/recent-works">Recent Works</Link></li>
-          <li><Link to="/packages">Packages</Link></li>
-          <li><Link to="/contact-us">Contact Us</Link></li>
+          <li><Link onClick={toggleSidebar} to="/">Home</Link></li>
+          <li><Link onClick={toggleSidebar} to="/packages">Packages</Link></li>
+          <li><Link onClick={toggleSidebar} to="/contact-us">Contact Us</Link></li>
         </ul>
       </div>
     </div>

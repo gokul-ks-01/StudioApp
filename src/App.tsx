@@ -3,7 +3,7 @@ import Sidebar from './SideBar';
 import ImageCarousel from './ImageCarousel';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Packages from './WorkPackage';
-import RecentWorks from './RecentWorks'
+import ContactInfo from './ContactInfo'
 
 export function Header() {
   return (
@@ -12,7 +12,7 @@ export function Header() {
 }
 
 export function Footer() {
-  return <span className='footer_text'>Developed By AG</span>;
+  return <span className='footer_text'></span>;
 }
 
 function App() {
@@ -28,9 +28,8 @@ function App() {
             <p className="read-the-docs">Capture your best moments</p>
           </>
         } />
-        <Route path="/recent-works" element={<RecentWorks/>} />
         <Route path="/packages" element={<Packages/>} />
-        <Route path="/contact-us" element={<h2>Contact Us Content</h2>} />
+        <Route path="/contact-us" element={<ContactInfo/>} />
       </Routes>
       <Footer />
     </Router>
