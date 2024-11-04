@@ -17,7 +17,7 @@ export function Footer() {
 
 function App() {
   return (
-    <Router basename="/StudioApp">
+    <Router>
       <Sidebar />
       <Header />
       <Routes>
