@@ -5,10 +5,11 @@ import "slick-carousel/slick/slick-theme.css";
 import './ImageCarousel.css'; // Import styles
 import SlideImage_1 from './assets/img_1.jpeg';
 import SlideImage_2 from './assets/img_2.jpeg';
+import SlideImage_3 from './assets/img_3.jpeg'
 
 const ImageCarousel = () => {
   const images = [
-    SlideImage_1,SlideImage_2
+    SlideImage_1,SlideImage_2,SlideImage_3
   ];
 
   // Slick carousel settings
