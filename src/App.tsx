@@ -28,8 +28,8 @@ function App() {
             <p className="read-the-docs">Capture your best moments</p>
           </>
         } />
-        <Route path="/packages" element={<Packages/>} />
-        <Route path="/contact-us" element={<ContactInfo/>} />
+        <Route path="/packages" element={<Packages />} />
+        <Route path="/contact-us" element={<ContactInfo />} />
       </Routes>
       <Footer />
     </Router>

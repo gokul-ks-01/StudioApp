@@ -13,9 +13,9 @@ const WorkPackage = () => {
      
         <section className='packages'>
             <div className='side_buttons_div'>
-                <button onClick={()=>openPackageDetails('Combined')} label="second one">Wedding - Combined</button>
-                <button onClick={()=>openPackageDetails('GroomSide')} label="first one">Wedding - Groom Side</button>
-                <button onClick={()=>openPackageDetails('BrideSide')} label="second one">Wedding - Bride Side</button>
+                <button onClick={()=>openPackageDetails('Combined')} label="second one">Wedding Combined</button>
+                <button onClick={()=>openPackageDetails('GroomSide')} label="first one">Wedding GroomSide</button>
+                <button onClick={()=>openPackageDetails('BrideSide')} label="second one">Wedding BrideSide</button>
             </div>
     
                 {showDetails}

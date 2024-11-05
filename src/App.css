@@ -182,7 +182,9 @@ h1{
   .sidebar.open {
     
     left: 0px;
-    background-color: aliceblue;
+    background-color: #d0e3f3;
+    top: 0;
+    
 
     
   }
